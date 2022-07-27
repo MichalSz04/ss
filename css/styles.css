@@ -22,6 +22,65 @@ html {
 	--font-family: 'Lato', sans-serif;
 }
 
+
+/* Main Classes */
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.btn-special-animation {
+	position: relative;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.btn-special-animation::before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: right;
+	transform-origin: right;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+	z-index: -1;
+}
+
+.btn-special-animation:hover::before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transform-origin: left;
+	transform-origin: left;
+}
+
+.section-heading {
+	position: relative;
+	margin-bottom: 2em;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: #002962;
+	letter-spacing: 2px;
+}
+
+.section-padding {
+	padding: 6em 2em;
+}
+
+
 body {
 	overflow-x: hidden;
 	font-family: var(--font-family);
@@ -30,6 +89,7 @@ body {
 	background-color: rgb(75, 72, 72);
 	transition: background-color 0.34s ease-in;
 }
+
 
 /*Navbar Section*/
 .navbar {
@@ -146,137 +206,8 @@ body {
 	height: 100%;
 }
 
-@media screen and (max-width: 968px) {
-	body {
-		overflow-x: hidden;
-		transition: background-color 0.66s ease-in;
-	}
 
-	.navbar__logo div {
-		display: block;
-	}
-
-	.navbar__list {
-		position: absolute;
-		left: 0px;
-		height: 88vh;
-		top: 8vh;
-		flex-direction: column;
-		align-items: center;
-		background-color: #00043a;
-		width: 90%;
-		transform: translate(-100%);
-		transition: transform 0.34s ease-in;
-	}
-
-	.navbar__icon {
-		height: 25px;
-		width: 25px;
-	}
-
-	.navbar__links {
-		opacity: 0;
-		font-size: 1.5em;
-	}
-
-	.header__h1 {
-		font-size: 1em;
-	}
-}
-
-@keyframes navLinksFade {
-	from {
-		opacity: 0;
-		transform: translate(50px);
-	}
-
-	to {
-		opacity: 1;
-		tranform: translateX(0px);
-	}
-}
-
-/* MICHAL */
-
-.wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
-}
-
-.btn-special-animation {
-	position: relative;
-	-webkit-transition: background-color 0.3s;
-	transition: background-color 0.3s;
-	overflow: hidden;
-	z-index: 0;
-}
-
-.btn-special-animation::before {
-	display: block;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transform-origin: right;
-	transform-origin: right;
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-	transition: transform 0.3s, -webkit-transform 0.3s;
-	z-index: -1;
-}
-
-.btn-special-animation:hover::before {
-	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
-	-webkit-transform-origin: left;
-	transform-origin: left;
-}
-
-.section-heading {
-	position: relative;
-	margin-bottom: 2em;
-	font-size: 3rem;
-	font-weight: 300;
-	text-transform: uppercase;
-	text-align: center;
-	color: #002962;
-	letter-spacing: 2px;
-}
-
-.section-padding {
-	padding: 6em 2em;
-}
-
-@media (min-width: 768px) {
-	.section-heading {
-		font-size: 3.6rem;
-	}
-	.section-padding {
-		padding: 8em 2em;
-	}
-}
-
-@media (min-width: 992px) {
-	.section-heading {
-		font-size: 4.8rem;
-	}
-	.section-padding {
-		padding: 10em 2em;
-	}
-}
-
-@media (max-width: 767px) {
-	.reviews.section-padding {
-		padding: 6em 0;
-	}
-}
-
+/*Reviews*/
 .reviews {
 	background-color: #ebebeb;
 }
@@ -327,7 +258,7 @@ body {
 	font-size: 1.4rem;
 	color: black;
 }
-
+/*Contact*/
 .contact {
 	position: relative;
 	background-color: white;
@@ -389,7 +320,7 @@ body {
 .contact__form-btn::before {
 	background-color: #ac1717;
 }
-
+/*Footer*/
 .footer {
 	color: white;
 	background-color: black;
@@ -398,4 +329,79 @@ body {
 .footer__bottom-text {
 	padding: 2em;
 	text-align: center;
+}
+
+/* Media */
+@media screen and (max-width: 968px) {
+	body {
+		overflow-x: hidden;
+		transition: background-color 0.66s ease-in;
+	}
+
+	.navbar__logo div {
+		display: block;
+	}
+
+	.navbar__list {
+		position: absolute;
+		left: 0px;
+		height: 88vh;
+		top: 8vh;
+		flex-direction: column;
+		align-items: center;
+		background-color: #00043a;
+		width: 90%;
+		transform: translate(-100%);
+		transition: transform 0.34s ease-in;
+	}
+
+	.navbar__icon {
+		height: 25px;
+		width: 25px;
+	}
+
+	.navbar__links {
+		opacity: 0;
+		font-size: 1.5em;
+	}
+
+	.header__h1 {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+	.section-padding {
+		padding: 8em 2em;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 4.8rem;
+	}
+	.section-padding {
+		padding: 10em 2em;
+	}
+}
+
+@media (max-width: 767px) {
+	.reviews.section-padding {
+		padding: 6em 0;
+	}
+}
+/*Animations*/
+@keyframes navLinksFade {
+	from {
+		opacity: 0;
+		transform: translate(50px);
+	}
+
+	to {
+		opacity: 1;
+		tranform: translateX(0px);
+	}
 }

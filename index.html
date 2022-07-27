@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <nav>Nawigacaj lololololo</nav>
-</body>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="navbar__list">
+        <li>
+          <a href="#" class="navbar__links">
+            <img class="navbar__icon" src="./img/icons/menu_home.svg" /> Strona
+            główna</a
+          >
+        </li>
+        <li>
+          <a href="#" class="navbar__links">
+            <img class="navbar__icon" src="./img/icons/menu_help.svg" /> Jak to
+            działa?</a
+          >
+        </li>
+        <li>
+          <a href="#" class="navbar__links">
+            <img class="navbar__icon" src="./img/icons/menu_star.svg" />
+            Recenzje</a
+          >
+        </li>
+        <li>
+          <a href="#" class="navbar__links">
+            <img class="navbar__icon" src="./img/icons/menu_phone.svg" />
+            Kontakt</a
+          >
+        </li>
+      </ul>
+      <div class="navbar__darkMode">
+        <img
+          src="./img/icons/moon.svg"
+          alt="Dark Mode"
+          height="150%"
+          width="150%"
+        />
+      </div>
+    </nav>
+    <header class="header">
+      <div>
+        <img
+          class="header__photo"
+          src="./img/img/english-flag.svg"
+          alt="English Flag"
+        />
+      </div>
+
+      <div class="header__h1">
+        <h1>Przełam bariere językową i zacznij w końcu mówić</h1>
+      </div>
+      <div class="button header__button">
+        <p class="button__text">START</p>
+      </div>
+    </header>
+
+    <script src="./js/app.js"></script>
+  </body>
 </html>

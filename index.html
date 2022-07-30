@@ -1,194 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-		/>
-		<link rel="stylesheet" href="./css/styles.css" />
-		<title>Document</title>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
 
-	<body>
-		<nav class="navbar">
-			<div class="navbar__logo">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
-			</div>
-			<ul class="navbar__list">
-				<li>
-					<a href="#" class="navbar__links">
-						<img class="navbar__icon" src="./img/icons/menu_home.svg" /> Strona
-						główna</a
-					>
-				</li>
-				<li>
-					<a href="#" class="navbar__links">
-						<img class="navbar__icon" src="./img/icons/menu_help.svg" /> Jak to
-						działa?</a
-					>
-				</li>
-				<li>
-					<a href="#" class="navbar__links">
-						<img class="navbar__icon" src="./img/icons/menu_star.svg" />
-						Recenzje</a
-					>
-				</li>
-				<li>
-					<a href="#" class="navbar__links">
-						<img class="navbar__icon" src="./img/icons/menu_phone.svg" />
-						Kontakt</a
-					>
-				</li>
-			</ul>
-			<div class="navbar__darkMode">
-				<img
-					src="./img/icons/moon.svg"
-					alt="Dark Mode"
-					height="150%"
-					width="150%"
-				/>
-			</div>
-		</nav>
-		<header class="header">
-			<div>
-				<img
-					class="header__photo"
-					src="./img/img/english-flag.svg"
-					alt="English Flag"
-				/>
-			</div>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="navbar__list">
+        <li>
+          <a href="#home" class="navbar__links">
+            <img class="navbar__icon" src="./img/icons/menu_home.svg" /> Strona
+            główna</a
+          >
+        </li>
+        <li>
+          <a href="#help" class="navbar__links">
+            <img class="navbar__icon" src="./img/icons/menu_help.svg" /> Jak to
+            działa?</a
+          >
+        </li>
+        <li>
+          <a href="#reviews" class="navbar__links">
+            <img class="navbar__icon" src="./img/icons/menu_star.svg" />
+            Recenzje</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="navbar__links">
+            <img class="navbar__icon" src="./img/icons/menu_phone.svg" />
+            Kontakt</a
+          >
+        </li>
+      </ul>
+      <div class="navbar__darkMode">
+        <img
+          src="./img/icons/moon.svg"
+          alt="Dark Mode"
+          height="150%"
+          width="150%"
+        />
+      </div>
+    </nav>
+    <header class="header" id="home">
+      <div class="header">
+        <img
+          class="header__photo"
+          src="./img/img/english-flag.svg"
+          alt="English Flag"
+        />
+      </div>
 
-			<div class="header__h1">
-				<h1>Przełam bariere językową i zacznij w końcu mówić</h1>
-			</div>
-			<button class="contact__form-btn btn-special-animation">
-				START
-			</button>
-		</header>
+      <div class="header__h1">
+        <h1>Przełam bariere językową i zacznij w końcu mówić</h1>
+      </div>
+      <button class="button__start btn-special-animation">START</button>
+    </header>
 
-		<main class="main">
-			<section
-				class="reviews section-padding section white-section"
-				id="reviews"
-			>
-				<h2 class="section-heading">RECENZJE</h2>
-				<div class="wrapper">
-					<div class="reviews__boxes">
-						<div class="reviews__box">
-							<div class="reviews__box-img">
-								<img src="./img/img/woman-7286576_1280.jpg" alt="Jan Ł." />
-							</div>
-							<div class="reviews__box-info">
-								<div class="reviews__box-quote"></div>
-								<p class="reviews__box-text">
-									Wspaniała strona, która pomogła mi odkryć ponownie pasję do
-									angielskiego
-								</p>
-								<strong>Jan Ł.</strong>
-							</div>
-						</div>
-						<div class="reviews__box">
-							<div class="reviews__box-img">
-								<img src="./img/img/woman-7286576_1280.jpg" alt="Jan Ł." />
-							</div>
-							<div class="reviews__box-info">
-								<div class="reviews__box-quote"></div>
-								<p class="reviews__box-text">
-									Wspaniała strona, która pomogła mi odkryć ponownie pasję do
-									angielskiego
-								</p>
-								<strong>Jan Ł.</strong>
-							</div>
-						</div>
-						<div class="reviews__box">
-							<div class="reviews__box-img">
-								<img src="./img/img/woman-7286576_1280.jpg" alt="Jan Ł." />
-							</div>
-							<div class="reviews__box-info">
-								<div class="reviews__box-quote"></div>
-								<p class="reviews__box-text">
-									Wspaniała strona, która pomogła mi odkryć ponownie pasję do
-									angielskiego
-								</p>
-								<strong>Jan Ł.</strong>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <main class="main">
+       <section class="why__wrapper">
+        <div class="why__h1">
+          <h2>
+            Znasz podstawy, ale podczas mówienia nagle wszystko zapominasz?
+          </h2>
+        </div>
+		<img class = "why__img"src="./img/img/why__learn.jpg" alt="learn">	
+		<img class = "why__img"src="./img/img/why__control.jpg" alt="control">		
+		<img class = "why__img"src="./img/img/why__dictionary.jpg" alt="dictionary">		
+        <div class="why__list">
+          <img
+            src="./img/icons/speaker.svg"
+            alt="speaker"
+            class="navbar__icon"
+          />
+          Ucz się mówić na tysiącach pytań
+        </div>
+        <div class="why__list">
+          <img
+            src="./img/icons/control.svg"
+            alt="control"
+            class="navbar__icon"
+          />
+          Kontroluj swój progres
+        </div>
+        <div class="why__list">
+          <img src="./img/icons/book.svg" alt="book" class="navbar__icon" />
+          Poszerzaj swoje słownictwo
+        </div>
+      </section>
+      <section
+        class="reviews section-padding section white-section"
+        id="reviews"
+      >
+        <h2 class="section-heading">RECENZJE</h2>
+        <div class="wrapper">
+          <div class="reviews__boxes">
+            <div class="reviews__box">
+              <div class="reviews__box-img">
+                <img src="./img/img/woman-7286576_1280.jpg" alt="Jan Ł." />
+              </div>
+              <div class="reviews__box-info">
+                <div class="reviews__box-quote"></div>
+                <p class="reviews__box-text">
+                  Wspaniała strona, która pomogła mi odkryć ponownie pasję do
+                  angielskiego
+                </p>
+                <strong>Jan Ł.</strong>
+              </div>
+            </div>
+            <div class="reviews__box">
+              <div class="reviews__box-img">
+                <img src="./img/img/woman-7286576_1280.jpg" alt="Jan Ł." />
+              </div>
+              <div class="reviews__box-info">
+                <div class="reviews__box-quote"></div>
+                <p class="reviews__box-text">
+                  Wspaniała strona, która pomogła mi odkryć ponownie pasję do
+                  angielskiego
+                </p>
+                <strong>Jan Ł.</strong>
+              </div>
+            </div>
+            <div class="reviews__box">
+              <div class="reviews__box-img">
+                <img src="./img/img/woman-7286576_1280.jpg" alt="Jan Ł." />
+              </div>
+              <div class="reviews__box-info">
+                <div class="reviews__box-quote"></div>
+                <p class="reviews__box-text">
+                  Wspaniała strona, która pomogła mi odkryć ponownie pasję do
+                  angielskiego
+                </p>
+                <strong>Jan Ł.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section
-				id="contact"
-				class="contact section-padding section white-section"
-			>
-				<h2 class="section-heading">SKONTAKTUJ SIĘ Z NAMI</h2>
+      <section
+        id="contact"
+        class="contact section-padding section white-section"
+      >
+        <h2 class="section-heading">SKONTAKTUJ SIĘ Z NAMI</h2>
 
-				<div class="wrapper">
-					<form class="contact__form">
-						<div class="contact__form-top">
-							<input
-								type="text"
-								class="contact__form-input"
-								id="name"
-								placeholder="IMIĘ I NAZWISKO:"
-							/>
+        <div class="wrapper">
+          <form class="contact__form">
+            <div class="contact__form-top">
+              <input
+                type="text"
+                class="contact__form-input"
+                id="name"
+                placeholder="IMIĘ I NAZWISKO:"
+              />
 
-							<input
-								type="text"
-								id="email"
-								class="contact__form-input"
-								placeholder="ADRES E-MAIL:"
-							/>
-						</div>
+              <input
+                type="text"
+                id="email"
+                class="contact__form-input"
+                placeholder="ADRES E-MAIL:"
+              />
+            </div>
 
-						<textarea
-							id="msg"
-							class="contact__form-textarea"
-							placeholder="WIADOMOŚĆ:"
-						></textarea>
+            <textarea
+              id="msg"
+              class="contact__form-textarea"
+              placeholder="WIADOMOŚĆ:"
+            ></textarea>
 
-						<button
-							type="submit"
-							class="contact__form-btn btn-special-animation"
-						>
-							Wyślij
-						</button>
-					</form>
-				</div>
-			</section>
-		</main>
+            <button
+              type="submit"
+              class="contact__form-btn btn-special-animation"
+            >
+              Wyślij
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-		<footer class="footer">
-			<p class="footer__bottom-text">
-				&copy; <span class="footer__year"></span> Induza
-			</p>
-		</footer>
+    <footer class="footer">
+      <p class="footer__bottom-text">
+        &copy; <span class="footer__year"></span> Induza
+      </p>
+    </footer>
 
-		<script
-			type="text/javascript"
-			src="//code.jquery.com/jquery-1.11.0.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-		></script>
-		<script src="./js/slick.js"></script>
-		<script src="./js/app.js"></script>
-	</body>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

@@ -9,6 +9,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	scroll-padding-top:100px;
 }
 
 :root {
@@ -111,8 +112,8 @@ body {
 }
 
 .navbar__icon {
-	height: 20px;
-	width: 20px;
+	height: 25px;
+	width: 25px;
 }
 
 .navbar__logo div {
@@ -181,13 +182,24 @@ body {
 	margin-bottom: 4em;
 }
 
-.button__text {
-	margin-top: 4%;
-	font-size: 5em;
-	color: var(--color-bg);
+.button__start {
+	align-self: center;
+	padding: 1em;
+	margin-bottom: 2em;
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	color: white;
+	border: none;
+	border-radius: 60px;
+	background-color: var(--color-btn-bg);
+	cursor: pointer;
+	font-size:3em;
+	letter-spacing: 3px;
 	font-style: italic;
-	font-weight: 700;
-	letter-spacing: 7px;
+  }
+  .button__start::before {
+	background-color: #ac1717;
 }
 
 .header__h1 {
@@ -197,16 +209,44 @@ body {
 	margin-right: 20%;
 	font-weight: 900;
 	font-style: italic;
-	font-size: 2em;
+	font-size: 3em;
 	text-align: center;
 }
 
 .header__photo {
-	width: 100%;
+	width: 65%;
 	height: 100%;
 }
 
-
+/*Why?*/
+.why__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap:wrap;
+	height: 80vh;
+	width:100%;
+	background-color: #ebebeb;
+}
+.why__h1{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top:2em;
+	align-self: center;
+	font-size:3em;
+	text-align: center;
+}
+.why__list{
+	margin: 3em;
+	font-size:3.2em;
+	text-align: center;
+}
+.why__img{
+	width:30%;
+	height: 472px;
+	border-radius: 30px;
+}
 /*Reviews*/
 .reviews {
 	background-color: #ebebeb;
@@ -341,7 +381,7 @@ body {
 	.navbar__logo div {
 		display: block;
 	}
-
+	
 	.navbar__list {
 		position: absolute;
 		left: 0px;
@@ -366,8 +406,33 @@ body {
 	}
 
 	.header__h1 {
-		font-size: 1em;
+		font-size: 1.7em;
 	}
+	.header__photo {
+		width: 85%;
+		height: 100%;
+	}
+	.button__start{
+		max-width: 90%;
+	}
+	
+	.why__wrapper{
+		flex-direction: column;
+		flex-wrap:wrap;
+	}
+	.why__h1{
+		margin-top:2em;
+		font-size:2em;
+	}
+	.why__list{
+		font-size: 2.3em;
+		margin: 0;
+		max-width: 90%;
+	}
+	.why__img{
+		display:none;
+	}
+
 }
 
 @media (min-width: 768px) {

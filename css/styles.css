@@ -211,7 +211,6 @@ body {
 }
 
 .header__photo {
-	width: 65%;
 	height: 100%;
 }
 
@@ -242,7 +241,7 @@ body {
 .why__img{
 	width:30%;
 	height: 472px;
-	border-radius: 30px;
+	border-radius: 50%;
 }
 
 /*Reviews*/

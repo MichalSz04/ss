@@ -9,7 +9,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	scroll-padding-top:100px;
+	scroll-padding-top: 100px;
 }
 
 :root {
@@ -191,11 +191,11 @@ body {
 	border-radius: 60px;
 	background-color: var(--color-btn-bg);
 	cursor: pointer;
-	font-size:3em;
+	font-size: 3em;
 	letter-spacing: 3px;
 	font-style: italic;
-  }
-  .button__start::before {
+}
+.button__start::before {
 	background-color: #ac1717;
 }
 
@@ -214,32 +214,31 @@ body {
 	height: 100%;
 }
 
-
 .why__wrapper {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 	height: 90vh;
-	width:100%;
+	width: 100%;
 	background-color: #ebebeb;
 }
-.why__h1{
+.why__h1 {
 	margin-left: 20%;
 	margin-right: 20%;
-	margin-top:2em;
+	margin-top: 2em;
 	align-self: center;
-	font-size:3em;
+	font-size: 3em;
 	text-align: center;
 }
-.why__list{
+.why__list {
 	margin: 3em;
-	font-size:3.2em;
+	font-size: 3.2em;
 	text-align: center;
 }
-.why__img{
-	width:30%;
+.why__img {
+	width: 30%;
 	height: 472px;
 	border-radius: 50%;
 }
@@ -418,7 +417,7 @@ body {
 .work__text {
 	font-size: 1.8rem;
 }
-.work__box__btn__div{
+.work__box__btn__div {
 	display: flex;
 	justify-content: center;
 }
@@ -433,7 +432,7 @@ body {
 	.navbar__logo div {
 		display: block;
 	}
-	
+
 	.navbar__list {
 		position: absolute;
 		left: 0px;
@@ -464,27 +463,26 @@ body {
 		width: 85%;
 		height: 100%;
 	}
-	.button__start{
+	.button__start {
 		max-width: 90%;
 	}
-	
-	.why__wrapper{
+
+	.why__wrapper {
 		flex-direction: column;
-		flex-wrap:wrap;
+		flex-wrap: wrap;
 	}
-	.why__h1{
-		margin-top:2em;
-		font-size:2em;
+	.why__h1 {
+		margin-top: 2em;
+		font-size: 2em;
 	}
-	.why__list{
+	.why__list {
 		font-size: 2.3em;
 		margin: 0;
 		max-width: 90%;
 	}
-	.why__img{
-		display:none;
+	.why__img {
+		display: none;
 	}
-
 }
 
 @media (max-width: 320px) {

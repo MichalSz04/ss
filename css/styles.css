@@ -232,15 +232,24 @@ body {
 	font-size: 3em;
 	text-align: center;
 }
+.why__lists{
+	display:flex;
+	justify-content: space-evenly;
+	width: 100%;
+	text-align: center;
+}
 .why__list {
 	margin: 3em;
 	font-size: 3.2em;
 	text-align: center;
-}
-.why__img {
+	flex-wrap: nowrap;
 	width: 30%;
+}
+.why__img{
+	max-width: 33%;
 	height: 472px;
 	border-radius: 50%;
+	width: 30%;
 }
 
 /*Reviews*/
@@ -471,14 +480,19 @@ body {
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
-	.why__h1 {
-		margin-top: 2em;
-		font-size: 2em;
+
+	.why__h1{
+		margin-top:2em;
+		font-size:3em;
 	}
-	.why__list {
-		font-size: 2.3em;
-		margin: 0;
+	.why__lists{
+		flex-direction: column;
+	}
+	.why__list{
+		font-size: 2.8em;
+		margin: 2em;
 		max-width: 90%;
+		width: auto;
 	}
 	.why__img {
 		display: none;
